@@ -33,7 +33,4 @@ GIT
 
 git log -1 - Ver o commit mais recente
 
-TESTE
-
-
-VIDA VIDA VIDA
+Continuação da aula de Git
