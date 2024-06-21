@@ -18,7 +18,7 @@ Mostra o estado atual do diretório de trabalho e da área de stage. Exibe quais
 ```sh
 git cat-file -p HEAD
 ```
-O comando git `cat-file -p HEAD` exibe o conteúdo do commit mais recente de uma forma legível para humanos.
+O comando `git cat-file -p HEAD` exibe o conteúdo do commit mais recente de uma forma legível para humanos.
 
 Aqui está uma explicação detalhada dos componentes do comando:
 
