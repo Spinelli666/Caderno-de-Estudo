@@ -35,3 +35,30 @@ Aqui estão os pontos principais em termos simples:
 4. **Portabilidade:** Como as aplicações estão dentro dessas caixas, você pode levá-las de um computador para outro sem problemas. Isso é útil para garantir que a aplicação funcione da mesma forma em qualquer lugar.
 
 5. **Facilidade:** Docker facilita a vida dos desenvolvedores, pois eles podem testar e rodar suas aplicações de maneira rápida e consistente.
+
+## Explicação de Comandos
+
+O comando `sudo docker container run alpine echo "Hello World"` é usado para criar e executar um container Docker que executa um comando simples. Vamos analisar cada parte deste comando:
+
+1. **`sudo`**: Este comando é usado para executar o comando subsequente com privilégios de superusuário (root). Isso é necessário porque operações do Docker geralmente requerem permissões administrativas para acessar o Docker daemon.
+
+2. **`docker`**: Este é o comando principal do Docker. Ele é usado para interagir com o Docker daemon para gerenciar containers, imagens, volumes, redes, etc.
+
+3. **`container`**: Este subcomando especifica que você está realizando uma operação relacionada a containers.
+
+4. **`run`**: Este subcomando especifica que você deseja criar e executar um novo container.
+
+5. **`alpine`**: Esta é a imagem que você está usando para criar o container. `alpine` refere-se à Alpine Linux, uma distribuição Linux muito leve e popular para containers devido ao seu pequeno tamanho.
+
+6. **`echo "Hello World"`**: Este é o comando que será executado dentro do container. No caso, ele simplesmente imprime "Hello World" na saída padrão.
+
+### O que o comando faz?
+
+Quando você coloca tudo junto, `sudo docker container run alpine echo "Hello World"` faz o seguinte:
+
+1. O `sudo` eleva o comando `docker` para ser executado com privilégios de superusuário.
+2. O `docker` cria um novo container baseado na imagem `alpine`.
+3. Dentro desse container, o Docker executa o comando `echo "Hello World"`.
+4. O container é então iniciado, o comando `echo "Hello World"` é executado, imprimindo "Hello World" no terminal, e o container é finalizado logo após a execução do comando.
+
+Este comando é um exemplo básico de como usar o Docker para executar um comando simples dentro de um container. É útil para testar e demonstrar como os containers Docker funcionam.
