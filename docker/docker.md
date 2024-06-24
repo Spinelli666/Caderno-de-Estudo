@@ -38,6 +38,10 @@ Aqui estão os pontos principais em termos simples:
 
 ## Explicação de Comandos
 
+```sh
+sudo docker container run alpine echo "Hello World
+```
+
 O comando `sudo docker container run alpine echo "Hello World"` é usado para criar e executar um container Docker que executa um comando simples. Vamos analisar cada parte deste comando:
 
 1. **`sudo`**: Este comando é usado para executar o comando subsequente com privilégios de superusuário (root). Isso é necessário porque operações do Docker geralmente requerem permissões administrativas para acessar o Docker daemon.
@@ -62,3 +66,60 @@ Quando você coloca tudo junto, `sudo docker container run alpine echo "Hello Wo
 4. O container é então iniciado, o comando `echo "Hello World"` é executado, imprimindo "Hello World" no terminal, e o container é finalizado logo após a execução do comando.
 
 Este comando é um exemplo básico de como usar o Docker para executar um comando simples dentro de um container. É útil para testar e demonstrar como os containers Docker funcionam.
+
+---
+
+```sh
+docker container ls -l
+```
+
+### O que o comando faz?
+
+**Função:**
+- Lista os contêineres Docker.
+
+**Detalhamento:**
+- `docker`: Chama o Docker.
+- `container`: Especifica que estamos trabalhando com contêineres.
+- `ls`: Lista os contêineres.
+- `-l`: Mostra apenas o contêiner mais recentemente criado (ou atualizado).
+
+**Resumo:**
+O comando `docker container ls -l` é usado para mostrar uma lista dos contêineres Docker, mas com a opção `-l`, ele filtra a lista para exibir apenas o contêiner mais recente.
+
+---
+
+```sh
+docker rm -f
+```
+
+**Função:**
+- Força a remoção de um ou mais contêineres Docker, mesmo que estejam em execução.
+
+**Detalhamento:**
+- `docker`: Chama o Docker.
+- `rm`: Remove contêineres.
+- `-f`: Força a remoção, parando os contêineres que estejam em execução.
+
+**Sintaxe:**
+```sh
+docker rm -f <nome_do_container_ou_ID>
+```
+
+---
+
+```sh
+docker container ls -a
+```
+
+**Função:**
+- Lista todos os contêineres Docker no sistema, incluindo aqueles que estão parados.
+
+**Detalhamento:**
+- `docker`: Chama o Docker.
+- `container`: Especifica que estamos trabalhando com contêineres.
+- `ls`: Lista os contêineres.
+- `-a`: Mostra todos os contêineres, incluindo os que estão parados.
+
+**Resumo:**
+O comando `docker container ls -a` é usado para exibir uma lista completa de todos os contêineres Docker no sistema, não apenas aqueles que estão em execução, mas também os que estão parados.
