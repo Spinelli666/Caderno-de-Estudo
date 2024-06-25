@@ -123,3 +123,79 @@ docker container ls -a
 
 **Resumo:**
 O comando `docker container ls -a` é usado para exibir uma lista completa de todos os contêineres Docker no sistema, não apenas aqueles que estão em execução, mas também os que estão parados.
+
+---
+
+```sh
+docker container stop <nome_do_container_ou_ID>
+```
+
+**Função:**
+- Para um ou mais contêineres Docker em execução.
+
+**Detalhamento:**
+- `docker`: Chama o Docker.
+- `container`: Especifica que estamos trabalhando com contêineres.
+- `stop`: Para os contêineres.
+
+---
+
+```sh
+docker container inspect <nome_do_container_ou_ID>
+```
+
+**Função:**
+- Obtém informações detalhadas sobre um contêiner Docker específico.
+
+**Detalhamento:**
+- `docker`: Chama o Docker.
+- `container`: Especifica que estamos trabalhando com contêineres.
+- `inspect`: Solicita informações detalhadas sobre o contêiner.
+- `<nome_do_container_ou_ID`: O nome ou ID do contêiner que você deseja inspecionar.
+
+**O Que É Retornado:**
+- **Configuração**: Dados sobre a configuração do contêiner, incluindo a imagem usada, comandos de inicialização, variáveis de ambiente, etc.
+- **Estado**: Informações sobre o estado atual do contêiner, como se está em execução, pausado, parado, etc.
+- **Rede**: Dados sobre as interfaces de rede do contêiner, incluindo endereços IP, portas expostas, etc.
+- **Montagens de Volume**: Informações sobre volumes montados no contêiner.
+- **Outros Metadados**: Dados adicionais como o ID do contêiner, nome, tempo de criação, etc.
+
+**Resumo:**
+O comando `docker container <nome_do_container_ou_ID` é usado para obter uma visão detalhada e abrangente de todas as configurações e estado atual de um contêiner Docker específico, identificado aqui pelo nome `<nome_do_container_ou_ID`.
+
+---
+
+```sh
+docker container logs <nome_do_container>
+```
+
+**Função:**
+- Visualiza os logs gerados por um contêiner Docker específico.
+
+**Detalhamento:**
+- `docker`: Chama o Docker.
+- `container`: Especifica que estamos trabalhando com contêineres.
+- `logs`: Solicita a exibição dos logs do contêiner.
+- `<nome_do_container>`: O nome ou ID do contêiner cujos logs você deseja visualizar.
+
+**Uso:**
+- Verificar a saída e os erros gerados por processos dentro do contêiner.
+- Depurar problemas que ocorrem dentro do contêiner.
+- Monitorar a atividade do contêiner em tempo real.
+
+**Exemplos de Uso:**
+
+1. **Visualizar os logs de um contêiner chamado `my_container`:**
+   ```sh
+   docker container logs my_container
+   ```
+
+2. **Vizualizar os logs em tempo real (modo "follow"):**
+    ```sh
+    docher container logs -f <nome_do_container>
+    ```
+3. **Exibir um número específico de linhas do final dos logs:**
+    ```sh
+    docker container logs --tail 10 my_container
+    ```
+    *Obs: No caso o exemplo aqui é 10.*
