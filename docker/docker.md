@@ -39,7 +39,7 @@ Aqui estão os pontos principais em termos simples:
 ## Explicação de Comandos
 
 ```sh
-sudo docker container run alpine echo "Hello World
+sudo docker container run alpine echo "Hello World"
 ```
 
 O comando `sudo docker container run alpine echo "Hello World"` é usado para criar e executar um container Docker que executa um comando simples. Vamos analisar cada parte deste comando:
@@ -199,3 +199,73 @@ docker container logs <nome_do_container>
     docker container logs --tail 10 my_container
     ```
     *Obs: No caso o exemplo aqui é 10.*
+
+---
+
+```sh
+docker volume create <nome>
+```
+
+**Função:**
+- Cria um novo volume no Docker com o nome especificado por `<nome>`.
+
+**Detalhamento:**
+- `docker volume create <nome>`: Comando usado para criar um novo volume Docker.
+  - `<nome>`: O nome que você deseja atribuir ao volume criado.
+
+**Uso e Propósito:**
+- **Persistência de Dados**: Armazenamento de dados que precisam sobreviver além do ciclo de vida de um contêiner.
+- **Compartilhamento de Dados**: Capacidade de ser montado em múltiplos contêineres para compartilhar dados.
+- **Backup e Restauração**: Facilita operações de backup e restauração de dados persistentes.
+
+---
+
+```sh
+docker volume inspect <nome>
+```
+
+**Função:**
+- Obtém informações detalhadas sobre um volume Docker específico identificado por `<nome>`.
+
+**Detalhamento:**
+- `docker volume inspect <nome>`: Comando usado para consultar informações detalhadas de um volume Docker.
+  - `<nome>`: O nome do volume cujas informações você deseja obter.
+
+**Uso e Propósito:**
+- **Consulta de Configuração**: Verificar nome, driver de armazenamento e opções configuradas para o volume.
+- **Depuração e Monitoramento**: Útil para diagnóstico de problemas e verificação de propriedades do volume.
+- **Integração com Ferramentas**: Pode ser utilizado em scripts ou ferramentas de automação para gerenciar volumes Docker.
+
+---
+
+```sh
+docker image prune -f
+```
+
+**Função:**
+- Remove imagens Docker não utilizadas de forma forçada e automática.
+
+**Detalhamento:**
+- `docker image prune`: Comando usado para limpar imagens Docker não utilizadas.
+  - `-f` ou `--force`: Opção que força a remoção das imagens sem solicitar confirmação interativa.
+
+**Uso e Propósito:**
+- **Limpeza de Espaço em Disco**: Remove imagens que não estão associadas a nenhum contêiner em execução, liberando espaço em disco.
+- **Manutenção e Otimização**: Mantém o ambiente Docker limpo e otimizado, removendo imagens que não são mais necessárias.
+
+---
+
+```sh
+docker volume prune
+```
+
+**Função:**
+- Remove volumes Docker que não estão sendo usados por nenhum contêiner em execução.
+
+**Detalhamento:**
+- `docker volume prune`: Comando usado para limpar volumes Docker não utilizados.
+  - Remove volumes "dangling" que não estão associados a nenhum contêiner ativo.
+
+**Uso e Propósito:**
+- **Limpeza de Recursos**: Remove volumes não utilizados para liberar espaço de armazenamento.
+- **Otimização de Recursos**: Mantém o ambiente Docker limpo e eficiente.
