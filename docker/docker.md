@@ -1,6 +1,6 @@
 # Docker
 
-Docker é uma plataforma de código aberto que facilita a criação, o envio e a execução de aplicações em contêineres. Aqui estão os pontos principais sobre o Docker:
+Docker é uma plataforma para construir, rodar e transferir aplicações do seu ambiente de teste ou de desenvolvimento para o ambiente em produção.
 
 1. **Contêineres**: Contêineres são pacotes leves e portáteis que incluem tudo o que uma aplicação precisa para rodar, como código, runtime, bibliotecas e dependências do sistema. Isso garante que a aplicação funcione de maneira consistente em diferentes ambientes.
 
@@ -20,21 +20,55 @@ Docker é uma plataforma de código aberto que facilita a criação, o envio e a
 
 9. **Docker Machine:** Docker Machine é uma ferramenta que permite instalar o Docker Engine em máquinas virtuais. Ele pode criar e configurar máquinas locais ou na nuvem, e depois instalar o Docker nelas. Isso é útil para configurar ambientes de desenvolvimento, teste ou produção de forma automática e consistente.
 
-## Docker Para Leigos
+## Diferença entre VMs e Containers
 
-Docker é uma ferramenta que ajuda os desenvolvedores a criar, testar e rodar aplicações de forma mais fácil e eficiente. Pense nele como uma caixa mágica onde você coloca tudo o que uma aplicação precisa para funcionar – como código, bibliotecas e configurações. Essa caixa mágica se chama "contêiner".
+A diferença entre máquinas virtuais (VMs) e containers reside principalmente na forma como eles compartilham recursos do sistema operacional e no seu isolamento. Aqui estão os principais pontos de distinção:
 
-Aqui estão os pontos principais em termos simples:
+### 1. Estrutura e Arquitetura
+#### Máquinas Virtuais (VMs)
+- **Hypervisor**: As VMs são gerenciadas por um hypervisor que permite a execução de múltiplos sistemas operacionais isolados em um único hardware físico.
+- **Sistema Operacional Completo**: Cada VM possui seu próprio sistema operacional completo, incluindo um kernel.
+- **Isolamento**: Proporcionam um isolamento robusto, com cada VM funcionando como um sistema separado e independente.
+- **Recursos**: VMs são geralmente mais pesadas em termos de consumo de recursos (CPU, memória e armazenamento) porque cada uma precisa de um sistema operacional completo e emulação de hardware.
 
-1. **Contêineres:** São como pequenas caixas que contêm tudo o que uma aplicação precisa para rodar. Isso faz com que a aplicação funcione da mesma forma em qualquer computador.
+#### Containers
+- **Kernel Compartilhado**: Containers compartilham o kernel do sistema operacional do host, mas possuem seu próprio espaço de usuário.
+- **Leveza**: São mais leves, pois não requerem um sistema operacional completo, apenas bibliotecas e dependências necessárias para executar a aplicação.
+- **Isolamento**: Proporcionam um isolamento de processo e rede, mas compartilham o mesmo kernel, o que pode introduzir algumas vulnerabilidades de segurança em comparação com VMs.
+- **Recursos**: Containers são mais eficientes em termos de recursos, permitindo maior densidade de aplicações no mesmo hardware.
 
-2. **Imagens Docker:** São como moldes prontos para criar essas caixas (contêineres). Cada imagem tem o sistema operacional, a aplicação e suas dependências.
+### 2. Tempo de Inicialização
+- **VMs**: O tempo de inicialização é mais longo porque envolve o boot de um sistema operacional completo.
+- **Containers**: Containers iniciam quase instantaneamente, pois só precisam iniciar os processos da aplicação.
 
-3. **Docker Hub:** É um lugar na internet onde você pode encontrar e compartilhar essas imagens prontas.
+### 3. Portabilidade
+- **VMs**: Podem ser movidas entre diferentes ambientes, mas isso pode ser complexo devido às diferenças de hypervisores e hardware.
+- **Containers**: São altamente portáveis. Podem ser executados em qualquer ambiente que suporte o container runtime (por exemplo, Docker), tornando a migração e a escalabilidade mais fáceis.
 
-4. **Portabilidade:** Como as aplicações estão dentro dessas caixas, você pode levá-las de um computador para outro sem problemas. Isso é útil para garantir que a aplicação funcione da mesma forma em qualquer lugar.
+### 4. Uso de Recursos
+- **VMs**: Geralmente requerem mais recursos do sistema, pois cada VM necessita de seu próprio sistema operacional.
+- **Containers**: Utilizam recursos mais eficientemente, permitindo a execução de mais aplicações no mesmo hardware.
 
-5. **Facilidade:** Docker facilita a vida dos desenvolvedores, pois eles podem testar e rodar suas aplicações de maneira rápida e consistente.
+### 5. Gerenciamento
+- **VMs**: O gerenciamento de VMs é mais complexo devido à necessidade de gerenciar múltiplos sistemas operacionais e configurações de hardware virtual.
+- **Containers**: O gerenciamento é mais simples, especialmente com ferramentas como Docker e Kubernetes que facilitam a orquestração e a automação de deployment.
+
+### 6. Casos de Uso
+- **VMs**: Ideal para executar múltiplos sistemas operacionais, simulação de ambientes de hardware e aplicações que requerem um isolamento robusto.
+- **Containers**: Ideal para desenvolvimento ágil, microsserviços, aplicações em nuvem e ambientes que exigem rápida escalabilidade e implantação.
+
+### Resumo
+
+| Característica         | Máquinas Virtuais (VMs)              | Containers                                 |
+|------------------------|--------------------------------------|--------------------------------------------|
+| Estrutura              | Hypervisor, sistema operacional completo | Kernel compartilhado, leve                 |
+| Tempo de Inicialização | Mais longo                           | Quase instantâneo                          |
+| Portabilidade          | Menos portátil                       | Altamente portátil                         |
+| Uso de Recursos        | Mais recursos necessários            | Mais eficiente em recursos                 |
+| Gerenciamento          | Mais complexo                        | Mais simples com ferramentas de orquestração |
+| Casos de Uso           | Isolamento robusto, múltiplos SOs    | Desenvolvimento ágil, microsserviços, nuvem |
+
+---
 
 ## Explicação de Comandos
 
@@ -269,3 +303,19 @@ docker volume prune
 **Uso e Propósito:**
 - **Limpeza de Recursos**: Remove volumes não utilizados para liberar espaço de armazenamento.
 - **Otimização de Recursos**: Mantém o ambiente Docker limpo e eficiente.
+
+---
+
+```sh
+docker images
+```
+
+**Função:**
+- Lista todas as imagens Docker disponíveis no sistema.
+
+**Detalhamento:**
+- `docke`: Chama o Docker.
+- `images`: Lista todas as imagens Docker disponíveis.
+
+**Resumo:**
+- O comando docker images é usado para exibir uma lista de todas as imagens Docker que estão armazenadas localmente no sistema.
