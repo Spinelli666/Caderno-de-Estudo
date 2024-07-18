@@ -123,3 +123,79 @@ docker image tag app:latest app:v1.0.0
 docker build -t app:v1.0.1 .
 ```
 - Usou paara criar a imagem com a tag editada
+
+## Seção 5: Containers
+
+### Aula 51: Nomeando containers
+
+```sh
+docker run -d [nome_da_imagem]
+```
+- Usado para rodar o container em background
+
+```sh
+docker run -d --name [nome_do_container] [nome_da_imagem]
+```
+- Usado para colocar um nome no container que quer rodar
+
+### Aula 52: Verificando o log de eventos
+
+```sh
+docker logs --help
+```
+- Para ver os comandos que pode fazer com os logs
+
+```sh
+docker logs [OPTION] CONTAINER
+```
+
+### Aula 53: Publicando portas de acesso
+
+```sh
+docker run -dp host:docker --name [nome] [imagem]
+```
+- O primeiro número da porta é de host e o segundo é do docker
+
+### Aula 54: Executando comandos em containers
+
+```sh
+docker exec [CONTAINER] [COMANDO]
+```
+
+### Aula 55: Iniciando e parando containers
+
+```sh
+docker stop [CONTAINER]
+```
+- Parando um container
+
+```sh
+docker start [CONTAINER]
+```
+- Iniciar um container
+
+### Aula 56: Removendo containers
+
+```sh
+docker rm --help
+```
+
+- Para ver os comandos que pode fazer com os rm
+
+### Aula 57: Volumes persistentes
+
+```sh
+docker volume create [NOME_VOLUME]
+```
+- Criar o nome do volume
+
+```sh
+docker volume inspect [NOME_VOLUME]
+```
+- Inspecionar o volume
+
+```sh
+docker run -dp 3000:3000 --name kiwi -v app-dados:/app/dados app:v2
+```
+- `v`: Adicionando o volume
+- `/app/dados`: No caso esse é o diretório que foi adicionado
