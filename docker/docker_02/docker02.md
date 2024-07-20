@@ -1,3 +1,5 @@
+# Curso Docker: Andre Iacono
+
 ## Seção 4: Criando Imagens Docker
 
 ### Aula 35: O que são Imagens e Containers
@@ -79,7 +81,7 @@ o comando **ENV** define variáveis de ambiente que são usadas tanto durante a 
 
 O comando CMD em um Dockerfile especifica o comando padrão que será executado quando um contêiner é iniciado a partir da imagem.
 
-RUN x CMD
+**RUN** x **CMD**
 
 - Utlizar o RUN quando está criando a imagem
 - Utliza o CMD depois que você cria a aimagem e está executando a sua aplicação
@@ -87,7 +89,7 @@ RUN x CMD
 ### Aulda 44: Adicionando um usuário na imagem
 
 ```docker
-RUN addgroup dev && adduser -S -G andre dev
+RUN addgroup dev && adduser -S -G [NOME_USER] dev
 ```
 - Colocar sempre no início, depois do WORKDIR.
 - O comando fala que está add um grupo e depois add o usuario andre no grupo dev
@@ -95,7 +97,7 @@ RUN addgroup dev && adduser -S -G andre dev
 - `-G` é uma opção do comando adduser que especifica o grupo primário ao qual o novo usuário será adicionado. No caso deste comando, `andre` será adicionado ao grupo `dev`.
 
 ```docker
-USER andre
+USER [NOME_USER]
 ```
 
 - Está falando para utilizar o usuário andre
@@ -199,3 +201,48 @@ docker run -dp 3000:3000 --name kiwi -v app-dados:/app/dados app:v2
 ```
 - `v`: Adicionando o volume
 - `/app/dados`: No caso esse é o diretório que foi adicionado
+
+## Seção 6: Docker Compose
+
+### Aula 64: Linguagem YAML
+
+Extensão do Docker Compose, utiliza a linguagem YAML
+
+Regras Básicas:
+
+- Uma linguagem de Data Serialization (É uma linguagem que é muito utlizada para escrever configurações)
+
+### Aula 66: Rodando e parando o docker compose
+
+```sh
+docker-compose up --build
+```
+- Rodar o docker compose
+
+```sh
+docker-compose down
+```
+- Parar o docker compose
+
+### Aula 67: A rede do Docker
+
+```sh
+docker exec -it -u root [CONTAINER_ID] sh
+```
+
+ ```sh
+ ifconfig
+ ```
+
+ ```sh
+ ping [NOME_DO_SERVIÇO]
+ ```
+
+ - O Docker por si só, tem construído uma solução, um sistema chamado DNS resolver
+
+ ### Aula 68: Docker Compose logs
+
+ ```sh
+ docker-compose logs
+  ```
+- Consegue verificar todos os logs
