@@ -1,2 +1,2 @@
 - [Docker do Curso DevOPS](./docker_01/docker01.md)
-- [Docker do Lex Luthor](./docker_02/docker02.md)
+- [Docker do Curso Andre Iacono](./docker_02/docker02.md)
