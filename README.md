@@ -4,3 +4,4 @@ Eu fiz esse repositório para me ajudar no meu aprendizado, tudo que eu aprendi 
 - [Comandos no Terminal (Usados no Linux)](./terminal_linux/terminal_linux.md)
 - [Docker](./docker/docker.md)
 - [Git e GitHub](./git_github/git_github.md)
+- [Ciência de Dados](./ciencia_dados/ciencia_dados.md)
