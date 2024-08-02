@@ -5,3 +5,4 @@ Eu fiz esse repositório para me ajudar no meu aprendizado, tudo que eu aprendi 
 - [Docker](./docker/docker.md)
 - [Git e GitHub](./git_github/git_github.md)
 - [Ciência de Dados](./ciencia_dados/ciencia_dados.md)
+- [Fundamentos de IA com IBM SkillsBuild](./fundamentos_ia/fundamentos_ia.md)
