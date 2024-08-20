@@ -42,5 +42,3 @@ Hoje, minha viagem ao trabalho utilizou três formas de inteligência:
 A inteligência aumentada combina as forças humanas com as das máquinas, permitindo-nos realizar tarefas impossíveis sozinhos.
 
 **Conclusão:** Ambas as formas de inteligência são necessárias para melhores resultados. A inteligência aumentada ajuda os humanos a prosperar e liderar.
-
-
