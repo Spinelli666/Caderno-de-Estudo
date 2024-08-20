@@ -43,3 +43,4 @@ A inteligência aumentada combina as forças humanas com as das máquinas, permi
 
 **Conclusão:** Ambas as formas de inteligência são necessárias para melhores resultados. A inteligência aumentada ajuda os humanos a prosperar e liderar.
 
+
