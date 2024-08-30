@@ -27,13 +27,13 @@ Hoje, minha viagem ao trabalho utilizou três formas de inteligência:
 
 3. **Inteligência Aumentada:** Recursos de assistência ao motorista, como detecção de colisão e aviso de ponto cego complementaram minhas capacidades ao dirigir.
 
-#### Diferenças entre IA e Inteligência Aumentada:**
+#### Diferenças entre IA e Inteligência Aumentada:
 
 **IA:** Máquinas realizam tarefas que exigem inteligência humana, substituindo a necessidade de humanos em certas tarefas.
 
 **Inteligência Aumentada:** Humanos e máquinas trabalham juntos, potencializando os esforços um do outro.
 
-#### Forças:
+#### Vantagens:
 
 **Máquinas:** Excelentes em ingerir grandes quantidades de dados, realizar tarefas repetitivas com precisão e não se cansam.
 
