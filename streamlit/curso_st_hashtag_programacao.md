@@ -14,6 +14,6 @@
 
 **Link da Aula 3:** https://youtu.be/AbQxNUvjwv8?si=H9z0lIUj8x-6NZnw
 
-4. [Aula 4 - Dashboard Completo de Corretora de Ações](aula4_hastag.md)
+4. [Aula 4 - Dashboard Completo de Corretora de Ações]
 
 **Link da Aula 4:** https://youtu.be/KPiYg4-kFzE?si=nbHhIBx9CbPsGanw
