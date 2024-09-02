@@ -7,3 +7,4 @@ Eu fiz esse repositório para me ajudar no meu aprendizado, tudo que eu aprendi 
 - [Ciência de Dados](./ciencia_dados/ciencia_dados.md)
 - [Fundamentos de IA com IBM SkillsBuild](./fundamentos_ia/fundamentos_ia.md)
 - [Streamlit](./streamlit/streamlit.md)
+- [Python](./python/python.md)
