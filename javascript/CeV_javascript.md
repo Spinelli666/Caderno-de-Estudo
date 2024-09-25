@@ -329,3 +329,62 @@ Conjunto de objetos dentro do meu navegador que vai dá acesso aos meus componen
     var d = window.document.querySelector('div#msg')
     d.style.background = 'blue'
 ```
+
+#### Funções
+
+```js
+    function acao(param){
+
+    }
+```
+
+- `acao()` é o nome da ação da função e dentro se pode colcoar alguns parametros
+
+```html
+    <body>
+        <div id="area">
+            Interaja
+        </div>        
+    </body>
+```
+```js
+
+    var a = window.document.getElementById('area')
+    a.addEventListener('click', clicar)
+    a.addEventListener('mouseenter', entrar)
+    a.addEventListener('mouseout', clicar)
+
+    function clicar() {
+        a.innerText = 'Clicou'
+        a.style.background = 'red'
+    }
+    function entrar(){
+        a.innerText = 'Entrou'
+    }
+    function sair(){
+        a.innerText = 'Sair'
+    }
+```
+
+- `addEventListener` - disparar eventos dentro do próprio JS
+
+```html
+    <body>
+        <h1>Somando Valores</h1>
+        <input type="number" name="txtn1" id="txtn1"> +
+        <input type="number" name="txtn2" id="txtn2">
+        <input type="buttom" value="Somar" onClick="somar()">
+        <div id="res"></div>
+    </body>
+```
+```js
+    function somar() {
+        var tn1 = window.document.getElementById('txtn1')
+        var tn2 = window.document.querySelector('input#txtn2')
+        var res = window.document.getElementById('red')
+        var n1 = Number(tn1.value)
+        var n2 = Number(tn2.value)
+        var s = n1 + n2
+        res.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${s}`
+    }
+```
