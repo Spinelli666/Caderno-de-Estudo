@@ -225,3 +225,28 @@ Conjunto de objetos dentro do meu navegador que vai dá acesso aos meus componen
 ```js
     getElementsByTagName()
 ```
+
+```html
+    <!-- Exemplo -->
+
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JS.</p>
+```
+```js
+    var corpo = window.document.body
+    var p1 = window.document.getElementsByTagName('p')[0]
+
+    // Tipos de exemplo
+    // Exemplo 1
+    window.document.write('Está escrito assim: ' + p1.innerText)
+
+    // Exemplo 2
+    corpo.style.background = 'black'
+    p1.style.color = 'blue'
+
+    // Exemplo 3
+    document.write(p1.innerText) // Pega só o texto
+    document.write(p1.innerHTML) // Pega as modificações do HTML
+```
+
+- O `[]` é para escolher qual `p`irá muder, se fir 0 por exemplo, será o primeiro parágrafo
