@@ -225,6 +225,7 @@ Conjunto de objetos dentro do meu navegador que vai dá acesso aos meus componen
 ```js
     getElementsByTagName()
 ```
+---
 
 ```html
     <!-- Exemplo -->
@@ -250,3 +251,81 @@ Conjunto de objetos dentro do meu navegador que vai dá acesso aos meus componen
 ```
 
 - O `[]` é para escolher qual `p`irá muder, se fir 0 por exemplo, será o primeiro parágrafo
+
+**Por ID**
+
+```js
+    getElementById()
+```
+---
+
+```html
+    <!-- Exemplo -->
+
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JS.</p>
+    <div id="msg">Clique em mim</div>
+```
+```js
+    var d = document.getElementById('msg')
+    d.style.backgroung = 'green'
+    d.innerText = 'Estou aguardando...'
+    //window.document.getElementById('msg').innerText = 'Olá!' => Modo mais complexo
+```
+
+**Por Nome**
+
+```js
+    getElementsByName()
+```
+---
+
+```html
+    <!-- Exemplo -->
+
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JS.</p>
+    <div name="msg">Clique em mim</div>
+```
+```js
+    var d = document.getElementsByName('msg')[0]
+    d.innerText = 'Olá'
+```
+
+**Por Class**
+
+```js
+    getElementsByClassName()
+```
+---
+
+```html
+    <!-- Exemplo -->
+
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JS.</p>
+    <div class="msg">Clique em mim</div>
+```
+```js
+    var d = document.getElementsByClassName('msg')[0]
+    d.innerText = 'Olá'
+```
+
+**Por Seletor**
+
+```js
+    querySelector()
+    querySelectorAll()
+```
+---
+```html
+    <!-- Exemplo -->
+
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JS.</p>
+    <div id="msg">Clique em mim</div>
+```
+```js
+    var d = window.document.querySelector('div#msg')
+    d.style.background = 'blue'
+```
