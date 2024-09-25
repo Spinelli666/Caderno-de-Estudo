@@ -4,6 +4,7 @@
 
 1. [Módulo A](#módulo-a)
 2. [Módulo B](#módulo-b)
+3. [Módulo C](#módulo-c)
 
 ### Módulo A
 
@@ -154,6 +155,7 @@
     >=
     <=
     ==
+    === // Realmente ver se é igual
     !=
 ```
 
@@ -181,6 +183,45 @@
     ? :
 
     teste?true:false
+
+    // Exemplo
+    var media = 5.5
+
+    media > 7?'APROVADO':'REPROVADO'
 ```
 
 - Operadores Ternários
+
+[Voltar Para Cima](#sumário)
+
+### Módulo C
+
+#### O que é DOM?
+
+**DOM** = **Document Object Model**
+
+Conjunto de objetos dentro do meu navegador que vai dá acesso aos meus componentes internos dentro do website.
+
+```js
+    // Exemplo 1
+    window.document.write('Olá, Mundo!')
+
+    // Exemplo 2
+    window.document.write('window.document.charset')
+
+    // Exemplo 3
+    window.document.write('window.navigator.appName')
+
+    // Exemplo 4
+    window.document.write('window.document.url')
+```
+
+- Adicionar diversos componentes
+
+#### Métodos de acesso para Ávore DOM
+
+**Por Marcar**
+
+```js
+    getElementsByTagName()
+```
