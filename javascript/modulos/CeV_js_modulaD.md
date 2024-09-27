@@ -75,3 +75,92 @@
 ---
 
 **Condições Aninhadas**
+
+```js
+    if (cond1) {
+        //bloco1
+    } else {
+        if (cond2) {
+            //bloco2
+        } else {
+            //bloco3
+        }
+    }
+```
+```js
+    if (cond1) {
+        //bloco1
+    } else if (cond3) {
+        //bloco2
+    } else {
+        //bloco3
+    }
+```
+```js
+// Exemplo
+    var agora = new Date()
+    var hora = agora.getHours() // Pegar a hora atual
+    console.log(`Agora são exatamente ${hora} horas.`)
+    if(hora < 12) {
+        console.log('Bom dia!')
+    } else if (hora <=18 ) {
+        console.log('Boa tarde!')
+    } else {
+        console.logo('Boa noite')
+    }
+```
+
+**Condição Múltipla**
+
+```js
+    switch (expressao) {
+        case valor 1:
+            break
+        case valor 2:
+            break
+        case valor 3:
+            break
+        default:
+            break // Última é opcional
+    }
+```
+
+```js
+var agora = new Date()
+var diaSem = agora.getDay()
+/*
+    0 = Domingo
+    1 = Segunda
+    2 = Terça
+    3 = Quarta
+    4 = Quinta
+    5 = Sexta
+    6 = Sábado
+*/
+
+switch(diaSem) {
+    case 0:
+        console.log('Domingo')
+        break
+    case 1:
+        console.log('Segunda')
+        break
+    case 2:
+        console.log('Terça')
+        break
+    case 3:
+        console.log('Quarta')
+        break
+    case 4:
+        console.log('Quinta')
+        break
+    case 5:
+        console.log('Sexta')
+        break
+    case 6:
+        console.log('Sábado')
+        break
+    default:
+        console.log('[ERRO] Dia Inválido!')
+}
+```
