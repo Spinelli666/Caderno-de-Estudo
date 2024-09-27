@@ -164,3 +164,5 @@ switch(diaSem) {
         console.log('[ERRO] Dia Inválido!')
 }
 ```
+
+[Voltar para Sumário](/javascript/CeV_javascript.md)
