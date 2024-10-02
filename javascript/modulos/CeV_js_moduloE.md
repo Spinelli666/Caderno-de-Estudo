@@ -28,11 +28,28 @@
 ```
 
 ```js
-// Exmeplo
+// Exemplo
 
     var c = 1
     do {
         console.log(`Passo ${c}`)
         c++
     } while (c <= 6)
+```
+
+**Estrutura de Repetição com Variável de Controle**
+
+```js
+    for(inicio; teste; incr) {
+
+    }
+```
+
+- Se o teste for **true** ele mantém, sefor **false** ele vai sair
+
+```js
+// Exemplo
+    for(var c=1; c<=10; c++) {
+
+    }
 ```
