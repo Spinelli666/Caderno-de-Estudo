@@ -111,3 +111,68 @@
 ```
 
 - `num.idexOf()`: vai procurar o valor da array que está dntro do `()`, se não tiver o valor, o memso retorna `-1`
+
+#### Funções
+
+**Exemplo 1:**
+
+Uma mãe deu dinheiro pro filho para ir no mercado e comprar leita para ela.
+
+- Toda **Função** precisa ter uma **chamada** (no exemplo, no caso é a mãe).
+- O **parâmetro de entrada** (que faz parte da chamada) seria o dinheiro e o leite.
+- Toda **Função** tem uma **ação**, que é no caso seria ir no mercado.
+- E temos no **retorno**, que é no caso quando você pega o leite e entrega para sua mãe.
+
+**Informações**
+
+- **Funções** são **ações** executadas assim que são *chamadas* ou em decorrência de algum *evento*.
+- Uma **função** pode receber *parâmetros* e retornar um resultado.
+
+**Exemplo 2:**
+
+![Exemplo 02](/javascript/img/ex02.png)
+
+**Exemplo 3:**
+![Exemplo 03](/javascript/img/ex03.png)
+
+```js
+// Exemplo 1 na Mão
+    function parimpar(n) {
+        if (n % 2 == 0) {
+            return 'Par'
+        } else {
+            return 'Ímpar'
+        }
+    }
+
+    console.log(parimpar(223))
+
+```
+```js
+// Exemplo 2 na Mão
+    function soma(a, b) {
+        return a + b;
+    }
+
+    console.log(soma(2, 5));
+```
+```js
+// Exemplo 3 na Mão
+    let v = function(x) {
+        return x*2
+    }
+
+    console.log(v(5))
+```
+```js
+// Exemplo 4 na Mão
+    function fatorial(n) {
+        let fat = 1
+        for (let c = n; c > 1; c--) {
+            fat *= c
+        }
+        return fat
+    }
+
+    console.log(fatorial(5))
+```
