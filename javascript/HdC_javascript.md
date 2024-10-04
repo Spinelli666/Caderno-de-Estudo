@@ -2,4 +2,5 @@
 
 ## Sumário
 
-1. []()
+1. [Introdução](modulos_HdC/HdC_introducao.md)
+2. [Tipos de dados e operadores](modulos_HdC/HdC_dados_operadores.md)
