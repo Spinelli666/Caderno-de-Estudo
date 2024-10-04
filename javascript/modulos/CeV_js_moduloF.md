@@ -176,3 +176,5 @@ Uma mãe deu dinheiro pro filho para ir no mercado e comprar leita para ela.
 
     console.log(fatorial(5))
 ```
+
+[Voltar para Sumário](/javascript/CeV_javascript.md)
