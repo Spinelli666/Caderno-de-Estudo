@@ -133,6 +133,7 @@ Uma mãe deu dinheiro pro filho para ir no mercado e comprar leita para ela.
 ![Exemplo 02](/javascript/img/ex02.png)
 
 **Exemplo 3:**
+
 ![Exemplo 03](/javascript/img/ex03.png)
 
 ```js
