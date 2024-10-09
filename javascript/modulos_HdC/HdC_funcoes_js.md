@@ -3,16 +3,16 @@
 ## Sumário
 
 1. [O que é uma função](#o-que-é-uma-função)
-    1.1. [Criando funções em JavaScript](#criando-funções-em-javascript)
-    1.2. [Retorno das funções](#retorno-das-funções)
-    1.3. [Escopo de funções](#escopo-de-funções)
-    1.4. [Escopo aninhado](#escopo-aninhado)
-    1.5. [Arrow functions (funções de flecha)](#arrow-functions-funções-de-flecha)
-    1.6. [Mais sobre as arrow functions em JavaScript](#mais-sobre-as-arrow-functions-em-javascript)
-    1.7. [Parâmetros opcionais em funções](#parâmetros-opcionais-em-funções)
-    1.8. [Argumento default (argumento com valor padrão)](#argumento-default-argumento-com-valor-padrão)
+    - 1.1. [Criando funções em JavaScript](#criando-funções-em-javascript)
+    - 1.2. [Retorno das funções](#retorno-das-funções)
+    - 1.3. [Escopo de funções](#escopo-de-funções)
+    - 1.4. [Escopo aninhado](#escopo-aninhado)
+    - 1.5. [Arrow functions (funções de flecha)](#arrow-functions-funções-de-flecha)
+    - 1.6. [Mais sobre as arrow functions em JavaScript](#mais-sobre-as-arrow-functions-em-javascript)
+    - 1.7. [Parâmetros opcionais em funções](#parâmetros-opcionais-em-funções)
+    - 1.8. [Argumento default (argumento com valor padrão)](#argumento-default-argumento-com-valor-padrão)
 2. [Introdução as closures](#introdução-as-closures)
-    2.1. [Mais sobre closures em JS](#mais-sobre-closures-em-js)
+    - 2.1. [Mais sobre closures em JS](#mais-sobre-closures-em-js)
 3. [Introdução a recursão](#introdução-a-recursão)
 
 ## O que é uma função?
