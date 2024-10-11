@@ -315,7 +315,7 @@ console.log(c1(5))
 console.log(c2(10))
 ```
 
-### Introdução a recursão
+## Introdução a recursão
 
 - Um recurso que permite a função **se autoinvocar continuamente**;
 - Criamos uma **espécie de loop**;

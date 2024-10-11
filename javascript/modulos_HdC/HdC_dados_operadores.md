@@ -29,7 +29,7 @@
     - Empty values (null, undefined);
     - Object;
 
-### Number
+## Number
 
 - **Number** é o tipo de dado para valores numéricos;
 - Em JS **todos os números são considerados Number**;
@@ -46,7 +46,7 @@ console.log(typeof 5.14) // number
 console.log(typeof -127) // number
 ```
 
-### Operações aritméticas
+## Operações aritméticas
 
 - Podemos realizar **operações aritméticas na programação*;*
 - Operadores como: `+`, `-`, `*`, `/`, podem ser utilizados;
@@ -64,7 +64,7 @@ console.log(10 / 2) // 5
 console.log(5 + (4 * 2))
 ```
 
-### Special numbers no JS
+## Special numbers no JS
 
 - **Special Numbers** são dados considerados como números, mas não funcionam como eles;
 - Eles são:
@@ -85,7 +85,7 @@ console.log(12 * "abc") // NaN
 console.log(typeof NaN) // number
 ```
 
-### Tipo String (para textos)
+## Tipo String (para textos)
 
 - Strings são **textos**;
 - Em JavaScript temos **três formas** de criar dados de texto;
@@ -104,7 +104,7 @@ console.log(typeof "Um texto") // string
 console.log(typeof `Mais um texto`) // string
 ```
 
-### Caracteres especiaias nas strings do JS
+## Caracteres especiaias nas strings do JS
 
 - Uma string deve sempre **começar e terminar com o mesmo caractere** (", ', `);
 - Há algumas **combinações de caracteres** que tem efeitos interessantes na strings;
@@ -118,7 +118,7 @@ console.log("Testando a \n quebra de linha")
 console.log("Espaçamento \t de tab")
 ```
 
-### Concatenando strings (unição de textos)
+## Concatenando strings (unição de textos)
 
 - **Concatenação** é o recurso que une dois ou mais textos;
 - O operador da concatenação é o **+**;
@@ -132,7 +132,7 @@ console.log("Oi," + " tudo " + " bem?")
 console.log(`Testando ` + `com ` + `crase!`)
 ```
 
-### Interpolação de textos
+## Interpolação de textos
 
 - Pode ser chamad ode **Template Strings**;
 - A **interpolação** é um recurso semelhante a concatenação;
@@ -147,7 +147,7 @@ console.log(`A soma de 2 + 2 é: ${2 + 2}`) // resultado 4 como texto
 console.log(`Podemos executar qualquer coisa aqui ${console.log("teste")}`) // Não funciona
 ```
 
-### Booleans (verdadeiro ou falso)
+## Booleans (verdadeiro ou falso)
 
 - Os booleans possuem apenas dois valores: true ou false;
 - Qualquer compração, utilizando o s sinais >, <, ==, resulta em um booleano;
@@ -164,7 +164,7 @@ console.log(30 > 10) // true
 console.log(typeof false) // boolean
 ```
 
-### Comparando valores em JS
+## Comparando valores em JS
 
 - As comparaçoes que podemos utilizar são:
 - **Maior e menor:** > e <;
@@ -186,7 +186,7 @@ console.log(10 == 9) // false
 console.log(10 != 9) // true
 ```
 
-### Comparação de valor idêntico (verificação de tipo e valor)
+## Comparação de valor idêntico (verificação de tipo e valor)
 
 - Os operadores **===** e **!==** funcionam como == e !=;
 - Porém também levam em consideração **o tipo do dado**;
@@ -207,7 +207,7 @@ console.log(9 != "9") // false
 console.log(9 !== "9") // true
 ```
 
-### Operadores lógicos
+## Operadores lógicos
 
 - Os **operadores lógicos** servem para unir duas ou mais comparações;
 - O resultado final também é um boolean;
@@ -215,13 +215,13 @@ console.log(9 !== "9") // true
 - **||** - OR - para ser true, um lado como true é suficiente;
 - **!** - NOT - este operador inverte a comparção;
 
-### Conhecendo a Tabela verdade
+## Conhecendo a Tabela verdade
 
 - A **tabela verdade** vale para qualquer linguagem, e contém todos os resultados dos operadores lógicos;
 
 ![Tabela Verdade](/javascript/img/tabela_verdade.png)
 
-### Operadores lógicos na prática
+## Operadores lógicos na prática
 
 ```js
 // 11 - Operadores lógicos
@@ -242,7 +242,7 @@ console.log(!true) // false
 console.log(!5 > 2) // false
 ```
 
-### Empty Values
+## Empty Values
 
 - Temos duas palavras reservadas que pertencem a este grupo de dados: **undefined** e **null**;
 - Undefined geralmente é visto quando utilizamos um código que ainda não foi definido;
@@ -262,7 +262,7 @@ console.log(null == false) // false
 console.log(undefined == false) // false
 ```
 
-### Mudança de tipos
+## Mudança de tipos
 
 - Em JavaScript algumas operações mudam o tipo de dado, e isso acontece 'silenciosamente';
 - Exemplos:
