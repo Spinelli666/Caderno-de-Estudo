@@ -7,3 +7,4 @@
 3. [Estruturas de programação](modulos_HdC/HdC_estrutura_prog.md)
 4. [Funções em JavaScript](modulos_HdC/HdC_funcoes_js.md)
 5. [Arrays e objetos em JavaScript](modulos_HdC/HdC_arrays_objetos.md)
+6. [Orientação a objetos com JavaScript](modulos_HdC/HdC_oop.md)
