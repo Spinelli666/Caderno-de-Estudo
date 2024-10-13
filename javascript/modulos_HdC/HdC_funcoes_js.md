@@ -1,4 +1,4 @@
-# Introdução
+# Funções em JavaScript
 
 ## Sumário
 

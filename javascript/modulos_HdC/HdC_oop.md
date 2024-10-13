@@ -1,4 +1,4 @@
-# Introdução
+# Orientação a objetos com JavaScript
 
 ## Sumário
 

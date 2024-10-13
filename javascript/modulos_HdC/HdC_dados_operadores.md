@@ -1,4 +1,4 @@
-# Introdução de dados e operadores
+# Tipos de dados e operadores
 
 ## Sumário
 

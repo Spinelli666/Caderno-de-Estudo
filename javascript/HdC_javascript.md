@@ -9,3 +9,4 @@
 5. [Arrays e objetos em JavaScript](modulos_HdC/HdC_arrays_objetos.md)
 6. [Orientação a objetos com JavaScript](modulos_HdC/HdC_oop.md)
 7. [Depuração com JavaScript](modulos_HdC/HdC_depuracao.md)
+8. [Programação assíncrona com JavaScript](modulos_HdC/HdC_assincrona.md)
