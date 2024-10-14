@@ -10,3 +10,4 @@
 6. [Orientação a objetos com JavaScript](modulos_HdC/HdC_oop.md)
 7. [Depuração com JavaScript](modulos_HdC/HdC_depuracao.md)
 8. [Programação assíncrona com JavaScript](modulos_HdC/HdC_assincrona.md)
+9. [JavaScript e o navegador](modulos_HdC/HdC_js_navegador.md)
