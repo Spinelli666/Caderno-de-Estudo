@@ -53,9 +53,9 @@
 ## Estrutura do HTML
 
 - Toda página HTML tem duas partes importantes, head e body;
-- No **head** inserimos as configurações da página, e importaação de outros arquivos (CSS, JS);
+- No **head** inserimos as configurações da página, e importação de outros arquivos (CSS, JS);
 - Já no **body** temos os elementos que ficam visíveis para o usuário;
-- AS tags possuem **atributos** que configuram os elementos;
+- As tags possuem **atributos** que configuram os elementos;
 
 ## HTML e JavaScript
 
@@ -75,7 +75,7 @@
 ### Visualizando o DOM
 
 - O DOM pode modificar completamente uma página;
-- È possível alterar: elementos, atributos, estilização;
+- É possível alterar: elementos, atributos, estilização;
 - **Adicionamos** e **removemos** elementos;
 - **O DOM cria uma árvore do HTML**, os elementos são chamados de **nós**;
 
@@ -134,7 +134,7 @@ footer {
 }
 ```
 
-**Obs:** Vamos usar esses dois aruqivos de cima como esqueleto nas próximas sessões.
+**Obs:** Vamos usar esses dois arquivos de cima como esqueleto nas próximas sessões.
 
 #### Arquivo JS
 
@@ -185,7 +185,7 @@ console.log(title)
 ### Selecionando elementos por classe
 
 - Com o método **getElementsByClassName** selecionamos um conjunto de elementos por uma classe em comum;
-- O argumento é uma string que leva a cçasse a ser selecionada;
+- O argumento é uma string que leva a classe a ser selecionada;
 - Veja como os atributos do HTML começam a fazer mais sentido em conjunto com JS;
 
 ```js
@@ -268,8 +268,8 @@ header.replaceChild(h2, title)
 
 ### Criando nós de texto
 
-- Os textos podem ser panipulados com métodos também;
-- Temos o **createTExtNode**, que cria um nó de texto;
+- Os textos podem ser manipulados com métodos também;
+- Temos o **createTextNode**, que cria um nó de texto;
 - E este nó pode ser inserido em um elemento;
 
 ```js
@@ -292,7 +292,7 @@ mainContainer.appendChild(h3)
 
 - Podemos ler e alterar os valores dos atirbutos;
 - Para ler vamos utilizar o método **getAttribute**;
-- E para alterar utilizamos **setAttribute**, este leva o nome do atirbuto e o valor para alterar;
+- E para alterar utilizamos **setAttribute**, este leva o nome do atributo e o valor para alterar;
 
 ```js
 // 10 - trabalhando com atributos
