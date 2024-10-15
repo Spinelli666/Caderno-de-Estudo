@@ -79,7 +79,7 @@
 - **Adicionamos** e **removemos** elementos;
 - **O DOM cria uma árvore do HTML**, os elementos são chamados de **nós**;
 
-![DOM](/javascript/img/dom.png.png)
+![DOM](/javascript/img/dom.png)
 
 ### Movendo-se pelo DOM
 
