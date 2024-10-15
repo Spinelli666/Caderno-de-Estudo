@@ -8,4 +8,5 @@ Eu fiz esse repositório para me ajudar no meu aprendizado, tudo que eu aprendi 
 - [Git e GitHub](./git_github/git_github.md)
 - [JavaScript](./javascript/javascript.md)
 - [Python](./python/python.md)
+- [React.js](/react/react.md)
 - [Streamlit](./streamlit/streamlit.md)
