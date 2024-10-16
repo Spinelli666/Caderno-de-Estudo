@@ -1,5 +1,7 @@
 # Introdução
 
+## Sumário
+
 1. [Criando o primeiro componente](#criando-o-primeiro-componente)
 2. [Importando componentes](#importando-componentes)
 3. [Conhecendo o JSX](#conhecendo-o-jsx)

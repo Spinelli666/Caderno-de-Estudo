@@ -1,5 +1,7 @@
 # Introdução
 
+## Sumário
+
 1. [O que é React JS?](#o-que-é-react-js)
 2. [Dependências do React](#dependências-do-react)
 3. [Hello World com React JS](#hello-world-com-react-js)
