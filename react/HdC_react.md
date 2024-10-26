@@ -7,3 +7,4 @@
 3. [Avançando no React JS](modulos_HdC/HdC_avancado.md)
 4. [CSS no React (estilização)](modulos_HdC/HdC_css.md)
 5. [Formulários com React](modulos_HdC/HdC_forms.md)
+6. [React Router](modulos_HdC/HdC_http.md)
