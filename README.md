@@ -1,6 +1,7 @@
 # Caderno de Estudo
 Eu fiz esse repositório para me ajudar no meu aprendizado, tudo que eu aprendi irá está escrito aqui nesse repositório.
 
+- [Banco de Dados SQL](./sql/sql.md)
 - [Ciência de Dados](./ciencia_dados/ciencia_dados.md)
 - [Comandos no Terminal (Usados no Linux)](./terminal_linux/terminal_linux.md)
 - [Docker](./docker/docker.md)
