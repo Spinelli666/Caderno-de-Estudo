@@ -11,3 +11,4 @@ Eu fiz esse repositório para me ajudar no meu aprendizado, tudo que eu aprendi 
 - [Python](./python/python.md)
 - [React.js](/react/react.md)
 - [Streamlit](./streamlit/streamlit.md)
+- [SQL](./sql/sql.md)
