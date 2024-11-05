@@ -12,6 +12,8 @@
 
 - É aonde você armazena suas informações;
 
+---
+
 ## Diferença entre SQL e NoSQL
 
 ### SQL
@@ -26,6 +28,8 @@
 - É uma linguagem para banco de dados não relacionais;
 - Armazena informação em documentos diferentes;
 - Tem mais velocidade e dá para armazenar um grande quantidade de dados que não conseguiria numa SQL;
+
+---
 
 ## O que é uma DBMS
 
