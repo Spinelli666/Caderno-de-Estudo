@@ -26,13 +26,13 @@
 - Tabelas são um conjunto de várias colunas (atributos);
 - Data Value: Um dado que está dentro de uma célula;
 
-![Foto 01](../img/foto1.png)
+![Foto 01](/sql/img/foto1.png)
 
 ### Tabelas Relacionais/Keys
 
 - As tabelas tem uma relação entre elas;
 
-![Foto 02](../img/foto2.png)
+![Foto 02](/sql/img/foto2.png)
 
 - **FOREIGN KEY** (Chave importada de outra tabela);
 - Grande quantidade de Chaves é para evitar duplicação de dados;
