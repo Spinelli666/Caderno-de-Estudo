@@ -9,3 +9,4 @@
 5. [Funções](/sql/bd_sql_andre/sql_andre/sql05.md)
 6. [SubQueries](/sql/bd_sql_andre/sql_andre/sql06.md)
 7. [Views](/sql/bd_sql_andre/sql_andre/sql07.md)
+8. [Funções Essenciais](/sql/bd_sql_andre/sql_andre/sql08.md)

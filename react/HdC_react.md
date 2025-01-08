@@ -9,3 +9,4 @@
 5. [Formulários com React](modulos_HdC/HdC_forms.md)
 6. [Requisições HTTP com React JS](modulos_HdC/HdC_http.md)
 7. [React Router](modulos_HdC/HdC_router.md)
+8. [Context API do React JS](modulos_HdC/HdC_context.md)
