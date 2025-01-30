@@ -9,6 +9,7 @@ Eu fiz esse repositório para me ajudar no meu aprendizado, tudo que eu aprendi 
 - [Fundamentos de IA com IBM SkillsBuild](./fundamentos_ia/fundamentos_ia.md)
 - [Git e GitHub](./git_github/git_github.md)
 - [JavaScript](./javascript/javascript.md)
+- [Next.js](./nextjs/nextjs.md)
 - [Python](./python/python.md)
 - [React.js](/react/react.md)
 - [Streamlit](./streamlit/streamlit.md)
