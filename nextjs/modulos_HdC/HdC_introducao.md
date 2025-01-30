@@ -20,6 +20,8 @@
 
 - **Desenvolvimento Simplificado:** O Next.js simplifica o processo de desenvolvimento com recursos como hot reloading (recarga rápida), divisão automática de código (code splitting).
 
+---
+
 ### Vantagens do Next.js sobre o React JS
 
 - **SEO e Renderização no Servidor:** O Next.js melhora significativamente o SEO ao renderizar páginas no servidor, tornando o conteúdo acessível para motores de busca.
@@ -32,6 +34,8 @@
 
 - **API Routes:** Permite a criação de APIs robustas dentro do próprio projeto, facilitando a integração e comunicação entre front-end e back-end.
 
+---
+
 ### Criando seu primeiro projeto Next.js
 
 - **Configurando o Projeto:** Utilize o comando `npx create-next-app nome-do-projeto` para criar um novo projeto Next.js. Este comando configura um projeto básico com todos os arquivos e configurações necessárias para começar.
@@ -39,6 +43,8 @@
 - **Personalizando a Página Inicial:** Altere a página inicial no diretório /pages adicionando elementos HTML e JSX.
 
 - **Visualização e Desenvolvimento:** Inicie o servidor de desenvolvimento do Next.js com npm run dev e veja sua aplicação em ação.
+
+---
 
 ### Estrutura de diretórios e erquivos
 
@@ -52,6 +58,8 @@
     - **globals.css:** Usado para estilização global.
 
 - **Importância do `next.config.mjs`:** Este arquivo configura opções avançadas do Next.js, como customização do webpack, variáveis de ambiente e redirecionamentos. É mais avançado e serve para otimização.
+
+---
 
 ### Diferença de SSR e CSR (Server Side Rendering e Client Side Redering)
 

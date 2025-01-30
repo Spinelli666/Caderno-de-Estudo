@@ -20,6 +20,8 @@
 - **Pastas sem arquivo `page.js` podem ser usadas para criar uma URL semântica**, exemplo:  
   `users/1/edit` → Se não houver `page.js` em `users`, a URL não é acessível, mas a pasta pode ficar vazia para compor a URL.
 
+---
+
 ### Navengando entre Páginas
 
 - **Estrutura de Roteamento no Next.js:**  
@@ -37,6 +39,8 @@
   ```jsx
   <Link href="/sobre">Sobre</Link>
 
+---
+
 ### Rotas dinâmicas
 
 - **Conceito de Rotas Dinâmicas:**  
@@ -49,6 +53,8 @@
   Para um blog, uma rota como `app/blog/[slug]/page.js` onde `[slug]` é o segmento dinâmico para posts do blog.
 
   O parâmetro `slug` é acessado na página através de `params.slug`.
+
+---
 
 ### Parâmetros na URL
 
@@ -65,6 +71,8 @@
 - **Métodos de URLSearchParams:**
   - `.get()`: Retorna o primeiro valor associado ao parâmetro de pesquisa.
   - `.has()`: Retorna um valor booleano indicando se o parâmetro de pesquisa especificado existe.
+
+---
 
 ### Nested Routes
 
