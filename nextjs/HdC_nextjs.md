@@ -8,4 +8,3 @@
 4. [Fetch e Server Actions](modulos_HdC/HdC_fetch_actions.md)
 5. [Cache](modulos_HdC/HdC_cache.md)
 6. [Autenticação com Next Auth](modulos_HdC/HdC_conexao.md)
-7. [NextGram](modulos_HdC/HdC_nextgram.md)
