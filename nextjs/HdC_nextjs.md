@@ -7,4 +7,4 @@
 3. [Estilização](modulos_HdC/HdC_estilizacao.md)
 4. [Fetch e Server Actions](modulos_HdC/HdC_fetch_actions.md)
 5. [Cache](modulos_HdC/HdC_cache.md)
-6. [Autenticação com Next Auth](modulos_HdC/HdC_conexao.md)
+6. [Autenticação com Next Auth](modulos_HdC/HdC_next_auth.md)
