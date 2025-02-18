@@ -7,6 +7,11 @@
 3. [Criando o Arquivo .env](#criando-o-arquivo-env)
 4. [Obtendo Secret e ID do Google Console](#obtendo-secret-e-id-do-google-console)
 5. [Configurando Handlers](#configurando-handlers)
+6. [Protegendo Componentes do Cliente](#protegendo-componentes-do-cliente)
+7. [Protegendo Páginas do Servidor](#protegendo-páginas-do-servidor)
+8. [Protegendo com Middleware](#protegendo-com-middleware)
+9. [Integrando NextAuth.js com Prisma](#integrando-nextauthjs-com-prisma)
+10. [Concluido a Integração do Banco de dados](#concluido-a-integração-do-banco-de-dados)
 
 
 ---
@@ -74,3 +79,55 @@ ORMs são bibliotecas ou ferramentas que facilitam a comunicação entre a aplic
 - Dentro de `route.ts` criaremos constantes que são extraídas dos **handlers** do arquivo `auth.ts`;
 - Esta é uma configuração necessária para as comunicações entre aplicação e **providers**;
 - Para importar o que está em `auth.ts` podemos criar um **alias** em `tsconfig.json` com o valor: `"auth": ["./auth.ts"]` dentro da chave `paths`;
+
+---
+
+### Protegendo Componentes do Cliente
+
+- Primeiramente criaremos uma página com **use client**, simulando uma página sem interação com actions;
+- Nesta página será necessário usar o hook **useSession**, onde extraímos os dados da sessão;
+- Com uma verificação na session é possível bloquear usuários que não estão autenticados;
+- Esta abordagem requer que todas as páginas estejam utilizando o contexto **SessionProvider**, podemos encapsular o layout todo com ele;
+- Por fim basta criar um link para acessarmos a página, faremos isso na home;
+
+---
+
+### Protegendo Páginas do Servidor
+
+- Para proteger uma página que não é client, é muito mais fácil!
+- Basta chamar a **session de auth novamente**, e fazer as validações;
+- **Não precisamos do contexto** nesta situação;
+- Para exemplificar esta situação, vamos precisar de: uma página e o link dela na home;
+
+---
+
+### Protegendo com Middleware
+
+- Primeiramente precisamos adicionar uma configuração chamada **callbacks** com uma função **authorized em auth.ts** para definir a lógica do middleware;  
+- Depois criar um arquivo **middleware.ts** em `src` exportando `auth` as middleware;  
+- Por fim basta criar a página e também o link para acessá-la;
+
+---
+
+### Integrando NextAuth.js com Prisma
+
+- Vamos agora integrar o **Prisma com SQLite** para poder salvar dados do usuário no banco;
+- Primeiramente instalamos os **pacotes**:
+  - `npm install @prisma/client @auth/prisma-adapter`
+  - `npm install prisma --save-dev`
+- Iniciamos o cliente do Prisma;
+- E incluímos os **adaptadores no arquivo de auth**;
+- Vamos configurar a **strategy de sessions como jwt**, pois o Prisma ainda **não** está totalmente integrado com Next Auth 5;
+- Esta é a primeira etapa do processo do Prisma no Next com Auth;
+
+---
+
+### Concluido a Integração do Banco de dados
+
+- Agora podemos iniciar os arquivos de configuração do Prisma com:
+  - `npx prisma init`
+- No arquivo de schema vamos colocar o **schema** sugerido pelo Next Auth, e apontar a URL para o arquivo `"file:./dev.db"` que é o nosso banco SQLite;
+- Agora precisamos **rodar as migrations** para efetuar a criação de estrutura do banco, o comando é:
+  - `npm exec prisma migrate dev`
+- **O arquivo dev.db** é criado com as tabelas necessárias;
+- Agora ao fazer o login o usuário é persistido no banco, com: nome, email e imagem!
